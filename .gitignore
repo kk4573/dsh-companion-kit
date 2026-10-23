@@ -13,8 +13,11 @@ upstream/qq-bridge/logs/
 notes/
 tools/
 runtime/
-persona/
 testbuddy*
+
+# 个人人设（每个人自己的伙伴，不进仓库）
+persona/roles/
+persona/generated/
 
 # 日志
 *.log

@@ -1,0 +1,16 @@
+# 陪伴体能力说明 —— 工具怎么用，固定注入，不随人设变。
+#
+# 必须是**顶层 YAML 数组**。
+# order 50：排在「人设（0）」之后、「记忆（100）」之前。
+
+- insert:
+    - id: companion-skills
+      name: 'dsh-companion-skills'
+      config:
+        enabled: true
+        # 能力说明文件。留空 = <lab>/persona/skills.md
+        skillsFile: ''
+        # 注入序号：人设 0 / 能力 50 / 记忆 100
+        order: 50
+        # 文件大小上限（字节）
+        maxBytes: 40000

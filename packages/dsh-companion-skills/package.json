@@ -1,0 +1,20 @@
+{
+  "name": "dsh-companion-skills",
+  "version": "0.1.0",
+  "description": "陪伴体的能力说明：工具怎么用，固定注入，不随人设改变。",
+  "type": "module",
+  "license": "MIT",
+  "author": "kk",
+  "keywords": ["dsh", "dsh-plugin", "skills", "tools", "companion"],
+  "exports": {
+    ".": "./src/host/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.0.5" },
+  "engines": { "node": ">=22", "dsh": ">=0.2.0-rc.2" }
+}

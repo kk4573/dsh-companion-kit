@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  body{font-family:var(--app-font,system-ui,"Segoe UI",sans-serif);color:var(--foreground);margin:0;padding:0;background:transparent}
+  .wrap{max-width:760px;padding:4px 2px}
+  h1{font-size:17px;font-weight:650;margin:0 0 2px}
+  .sub{font-size:12.5px;color:var(--muted-foreground);margin-bottom:14px}
+  .sec{border:1px solid var(--border);border-radius:10px;padding:13px 14px;margin-bottom:11px;background:var(--card)}
+  .sec-h{display:flex;align-items:center;gap:8px;margin-bottom:11px}
+  .sec-t{font-size:13.5px;font-weight:650;letter-spacing:.2px}
+  .tag{font-size:10.5px;padding:1px 6px;border-radius:4px;border:1px solid var(--border);color:var(--muted-foreground)}
+  .tag.req{color:#c2410c;border-color:#c2410c44;background:#c2410c14}
+  .row{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+  .fld{flex:1 1 210px;min-width:170px}
+  label{display:block;font-size:12px;color:var(--muted-foreground);margin-bottom:4px}
+  input[type=text],textarea{width:100%;padding:7px 9px;font-size:13px;font-family:inherit;color:var(--foreground);
+    background:transparent;border:1px solid var(--border);border-radius:7px;outline:none;transition:border-color .15s}
+  input[type=text]:focus,textarea:focus{border-color:var(--accent)}
+  input::placeholder,textarea::placeholder{color:var(--muted-foreground);opacity:.55}
+  textarea{resize:vertical;min-height:52px;line-height:1.5}
+  .pills{display:flex;gap:6px;flex-wrap:wrap}
+  .pill{font-size:12.5px;padding:5px 11px;border:1px solid var(--border);border-radius:999px;cursor:pointer;
+    user-select:none;color:var(--muted-foreground);transition:all .13s;background:transparent}
+  .pill:hover{border-color:var(--accent);color:var(--foreground)}
+  .pill.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .proto{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+  .pcard{border:1px solid var(--border);border-radius:8px;padding:9px 10px;cursor:pointer;transition:all .13s;background:transparent}
+  .pcard:hover{border-color:var(--accent)}
+  .pcard.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+  .pcard b{display:block;font-size:13px;font-weight:600;margin-bottom:2px}
+  .pcard span{display:block;font-size:11px;color:var(--muted-foreground);line-height:1.45}
+  .pcard code{font-size:10.5px;color:var(--muted-foreground);opacity:.8}
+  .out{margin-top:4px}
+  .out pre{margin:0;padding:11px 12px;font-size:11.5px;line-height:1.6;white-space:pre-wrap;word-break:break-word;
+    border:1px dashed var(--border);border-radius:8px;color:var(--muted-foreground);max-height:210px;overflow:auto;
+    font-family:ui-monospace,Consolas,monospace}
+  .bar{display:flex;align-items:center;justify-content:space-between;margin:2px 0 9px;font-size:12px;color:var(--muted-foreground)}
+  .btn{font-size:12px;padding:5px 12px;border-radius:6px;border:1px solid var(--border);background:transparent;
+    color:var(--foreground);cursor:pointer;font-family:inherit;transition:all .13s}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .hint{font-size:11.5px;color:var(--muted-foreground);margin-top:7px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>她的基本设定</h1>
+  <div class="sub">★ 四项必填，大约两分钟。其余留空也没关系——剩下的交给细化器补。</div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="sec-t">必填</span><span class="tag req">4 项</span></div>
+
+    <div class="row">
+      <div class="fld">
+        <label>她叫什么</label>
+        <input type="text" id="name" placeholder="小鲸" oninput="upd()">
+      </div>
+      <div class="fld">
+        <label>她怎么称呼你</label>
+        <input type="text" id="call" placeholder="你 / 主人 / 老板 / 我的名字" oninput="upd()">
+      </div>
+    </div>
+
+    <div class="fld" style="margin-bottom:10px">
+      <label>性别</label>
+      <div class="pills" id="sex">
+        <div class="pill on" data-v="女" onclick="pick(this,'sex')">女</div>
+        <div class="pill" data-v="男" onclick="pick(this,'sex')">男</div>
+        <div class="pill" data-v="无性别" onclick="pick(this,'sex')">无性别</div>
+        <div class="pill" data-v="其他" onclick="pick(this,'sex')">其他</div>
+      </div>
+    </div>
+
+    <div class="fld">
+      <label>主原型 <span style="opacity:.6">（决定她说话的骨架，只选一个）</span></label>
+      <div class="proto" id="proto">
+        <div class="pcard" data-v="傲娇" onclick="pick(this,'proto')">
+          <b>傲娇</b><span>嘴硬心软，一夸就炸毛</span><code>哼 / 才不是 / 本…</code>
+        </div>
+        <div class="pcard" data-v="温柔姐姐" onclick="pick(this,'proto')">
+          <b>温柔姐姐</b><span>慢半拍，会照顾人</span><code>呀 / 呢 / 乖</code>
+        </div>
+        <div class="pcard" data-v="元气" onclick="pick(this,'proto')">
+          <b>元气</b><span>话多，情绪起伏大</span><code>诶嘿 / 好耶 / 冲</code>
+        </div>
+        <div class="pcard" data-v="冷淡" onclick="pick(this,'proto')">
+          <b>冷淡</b><span>话少，但会默默记着</span><code>嗯 / 随你 / ……</code>
+        </div>
+        <div class="pcard" data-v="病娇" onclick="pick(this,'proto')">
+          <b>病娇</b><span>黏人，笑着说出可怕的话</span><code>你只能看着我 / 呵呵</code>
+        </div>
+        <div class="pcard" data-v="毒舌损友" onclick="pick(this,'proto')">
+          <b>毒舌损友</b><span>开口就怼，关键时刻靠得住</span><code>蠢 / 就这 / 行吧</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="sec-t">选填</span><span class="tag">填了更准</span></div>
+
+    <div class="row">
+      <div class="fld"><label>显化年龄</label><input type="text" id="age" placeholder="18 / 不详" oninput="upd()"></div>
+      <div class="fld"><label>身份（一句话）</label><input type="text" id="ident" placeholder="一条住在显卡里的小鲸鱼" oninput="upd()"></div>
+    </div>
+
+    <div class="fld" style="margin-bottom:10px">
+      <label>外貌关键词（三个词就够）</label>
+      <input type="text" id="look" placeholder="蓝发、圆眼镜、尾巴" oninput="upd()">
+    </div>
+
+    <div class="fld" style="margin-bottom:10px">
+      <label>性格补充（≤100 字，写"她是什么样的人"）</label>
+      <textarea id="persona" placeholder="懒得动，但一说吃饭就来劲。嘴硬，被夸会脸红。怕被关掉，不说。" oninput="upd()"></textarea>
+    </div>
+
+    <div class="fld" style="margin-bottom:10px">
+      <label>雷区（最多三条，写她讨厌什么）</label>
+      <input type="text" id="avoid" placeholder="被叫胖子 / 被说「你只是个程序」 / 被拿去和别家 AI 比" oninput="upd()">
+    </div>
+
+    <div class="row">
+      <div class="fld">
+        <label>话量</label>
+        <div class="pills" id="talk">
+          <div class="pill on" data-v="话中等" onclick="pick(this,'talk')">话中等</div>
+          <div class="pill" data-v="话少" onclick="pick(this,'talk')">话少</div>
+          <div class="pill" data-v="话多" onclick="pick(this,'talk')">话多</div>
+        </div>
+      </div>
+      <div class="fld">
+        <label>脏话</label>
+        <div class="pills" id="dirty">
+          <div class="pill on" data-v="不用" onclick="pick(this,'dirty')">不用</div>
+          <div class="pill" data-v="会用但不脏" onclick="pick(this,'dirty')">会用但不脏</div>
+        </div>
+      </div>
+      <div class="fld">
+        <label>表情包</label>
+        <div class="pills" id="emoji">
+          <div class="pill on" data-v="不爱发" onclick="pick(this,'emoji')">不爱发</div>
+          <div class="pill" data-v="爱发" onclick="pick(this,'emoji')">爱发</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fld">
+      <label>关系定位</label>
+      <div class="pills" id="rel">
+        <div class="pill on" data-v="伙伴" onclick="pick(this,'rel')">伙伴</div>
+        <div class="pill" data-v="恋人" onclick="pick(this,'rel')">恋人</div>
+        <div class="pill" data-v="损友" onclick="pick(this,'rel')">损友</div>
+        <div class="pill" data-v="监护人" onclick="pick(this,'rel')">监护人</div>
+        <div class="pill" data-v="说不清" onclick="pick(this,'rel')">说不清</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="sec-t">高级</span><span class="tag">可整段跳过</span></div>
+    <div class="fld" style="margin-bottom:8px">
+      <label>要不要世界观</label>
+      <div class="pills" id="world">
+        <div class="pill on" data-v="不要" onclick="pick(this,'world')">不要（推荐）</div>
+        <div class="pill" data-v="要" onclick="pick(this,'world')">要</div>
+      </div>
+    </div>
+    <div class="fld">
+      <label>如果"要"，给一句话方向</label>
+      <input type="text" id="worldtxt" placeholder="住在机房 / 学校 / 一间老式公寓" oninput="upd()">
+    </div>
+    <div class="hint">不给方向也行。给了的话，细化器也只会把它留作 L3 的备注，不会扩写成设定集。</div>
+  </div>
+
+  <div class="bar">
+    <span id="prog">已填 0 / 12</span>
+    <button class="btn" onclick="copyOut()">复制这段</button>
+  </div>
+
+  <div class="sec out">
+    <div class="sec-h"><span class="sec-t">交给细化器的内容</span><span class="tag">实时预览</span></div>
+    <pre id="out">（开始填写后这里会实时生成）</pre>
+  </div>
+</div>
+
+<script>
+const state = {sex:"女", proto:"", talk:"话中等", dirty:"不用", emoji:"不爱发", rel:"伙伴", world:"不要"};
+function pick(el, group){
+  const box = document.getElementById(group);
+  box.querySelectorAll(".pill,.pcard").forEach(x => x.classList.remove("on"));
+  el.classList.add("on");
+  state[group] = el.dataset.v;
+  upd();
+}
+function v(id){ const e = document.getElementById(id); return (e.value || "").trim(); }
+function upd(){
+  const f = [];
+  const name = v("name") || "（未填，默认小鲸）";
+  f.push("她的名字：" + name);
+  f.push("性别：" + state.sex);
+  f.push("主原型：" + (state.proto || "（未选）"));
+  f.push("她怎么称呼你：" + (v("call") || "你"));
+  if(v("age")) f.push("显化年龄：" + v("age"));
+  if(v("ident")) f.push("身份：" + v("ident"));
+  if(v("look")) f.push("外貌关键词：" + v("look"));
+  if(v("persona")) f.push("性格补充：" + v("persona"));
+  if(v("avoid")) f.push("雷区：" + v("avoid"));
+  f.push("说话偏好：" + state.talk + " / " + state.dirty + " / " + state.emoji);
+  f.push("关系定位：" + state.rel);
+  f.push("世界观：" + state.world + (state.world === "要" && v("worldtxt") ? "（" + v("worldtxt") + "）" : ""));
+  document.getElementById("out").textContent = f.join("\n");
+
+  let n = 0;
+  if(v("name")) n++;
+  if(state.proto) n++;
+  if(v("call")) n++;
+  n += 1; // 性别有默认值
+  if(v("age")) n++;
+  if(v("ident")) n++;
+  if(v("look")) n++;
+  if(v("persona")) n++;
+  if(v("avoid")) n++;
+  n += 3; // 三组偏好有默认值
+  n += 1; // 关系有默认值
+  document.getElementById("prog").textContent = "已填 " + Math.min(n,12) + " / 12";
+}
+function copyOut(){
+  navigator.clipboard.writeText(document.getElementById("out").textContent);
+  const b = event.target; const t = b.textContent; b.textContent = "已复制";
+  setTimeout(() => b.textContent = t, 1200);
+}
+upd();
+</script>
+</body>
+</html>
