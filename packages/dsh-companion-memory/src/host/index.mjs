@@ -20,6 +20,7 @@ import {
   readRecentDiary,
   resolveDataDir,
 } from '../core/store.mjs';
+import fs from 'node:fs';
 import { recall } from '../core/recall.mjs';
 import { runForget } from '../core/forget.mjs';
 import { EXTRACT_MAX_TOKENS, buildPrompt, parseVerdict } from '../core/extract.mjs';
@@ -76,6 +77,8 @@ function resolveConfig(raw) {
     // 心情/好感度：留空 = 不启用（桥那边会用自己的默认值）
     moodFile: String(c.moodFile ?? '').trim(),
     moodIntervalMs: Number(c.moodIntervalMs) > 0 ? Number(c.moodIntervalMs) : 600000,
+    // 桥的会话状态文件（social-v2.json）。给了它，写日记就按桥的对话记录来，重启不丢。
+    conversationFile: String(c.conversationFile ?? '').trim(),
   };
 }
 
@@ -538,30 +541,81 @@ export function apply(ctx, rawConfig) {
   // ── 写日记：聊完一段（空闲 30 分钟）或当天 23:30 收尾 ─────────
   let diaryBusy = false;
 
+  /**
+   * 从桥的状态文件里读对话。
+   *
+   * 为什么不自己维护内存缓冲：缓冲一重启就没了。今天光是改插件就重启了十几次，
+   * 结果下午聊的全没进日记。桥本来就把最近 100 条存在 social-v2.json 里，
+   * 直接读它，重启不丢、也不用同步。
+   */
+  function readBridgeMessages() {
+    const file = config.conversationFile;
+    if (!file) return [];
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(file, 'utf8'));
+    } catch {
+      return [];
+    }
+    const convs = data?.conversations ?? {};
+    const out = [];
+    for (const conv of Object.values(convs)) {
+      const msgs = conv?.recentMessages;
+      if (!Array.isArray(msgs)) continue;
+      for (const m of msgs) {
+        const text = String(m?.text ?? m?.plain ?? '').trim();
+        if (!text) continue;
+        out.push({
+          who: m?.isOwner ? '他' : (m?.isSelf ? '她' : '他'),
+          text,
+          time: Number(m?.time) || 0,
+        });
+      }
+    }
+    out.sort((a, b) => a.time - b.time);
+    return out;
+  }
+
+  // 启动时自检一次：能读到多少条对话
+  {
+    const probe = readBridgeMessages();
+    log(`对话来源：${config.conversationFile || '(未配置)'} → ${probe.length} 条`);
+  }
+
   async function maybeWriteDiary(force = false) {
     if (diaryBusy || !config.enabled) return;
     const buf = segmentBuffer.get('default');
-    if (!buf || buf.messages.length < 3) return;
 
+    // 优先读桥的对话记录（重启不丢）；没配置时退回内存缓冲
+    const fromBridge = readBridgeMessages();
+    const all = fromBridge.length
+      ? fromBridge
+      : (buf?.messages ?? []).map((m) => ({
+        who: '他', text: String(m?.text ?? m), time: Number(m?.at) || 0,
+      }));
+
+    const st = readDiaryState(dataDir);
+    const since = Number(st.lastMsgTime) || 0;
+    const fresh = all.filter((m) => m.time > since);
+    if (fresh.length < 3) return;
+
+    const lastAt = fresh[fresh.length - 1].time;
     const now = new Date();
-    const idleMs = Date.now() - (buf.lastAt || 0);
+    const idleMin = (Date.now() - lastAt) / 60000;
     const h = now.getHours();
-    const pastEod = h > 23 || (h === 23 && now.getMinutes() >= 30);
-    if (!force && !(idleMs >= 30 * 60 * 1000 || pastEod)) return;
+    const pastEod = h >= 23 && now.getMinutes() >= 30;
+    if (!force && !(idleMin >= 30 || pastEod)) return;
 
     const sel = currentModel();
-    if (!sel) return;
-
-    const dateKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-    const st = readDiaryState(dataDir);
-    // 同一段（同一天 + 同条数）不重复写
-    if (st.lastDate === dateKey && Number(st.lastCount) === buf.messages.length) return;
+    if (!sel) {
+      warn('日记：取不到默认模型，本轮跳过');
+      return;
+    }
 
     diaryBusy = true;
-    const count = buf.messages.length;
     try {
       const prompt = buildDiaryPrompt({
-        lines: buf.messages.slice(-40).map((m) => `他：${String(m?.text ?? m).slice(0, 200)}`),
+        lines: fresh.slice(-40).map((m) => `${m.who}：${String(m.text).slice(0, 200)}`),
         moodDesc: '',
         slot: '',
       });
@@ -588,11 +642,13 @@ export function apply(ctx, rawConfig) {
       const body = cleanDiaryBody(raw);
       const r = appendDiary(dataDir, body, now);
       if (r.ok) {
-        writeDiaryState(dataDir, { lastDate: dateKey, lastCount: count, at: Date.now() });
-        buf.messages = [];
-        buf.lastAt = 0;
+        writeDiaryState(dataDir, { lastMsgTime: lastAt, at: Date.now() });
+        if (buf) {
+          buf.messages = [];
+          buf.lastAt = 0;
+        }
         cache.at = 0;
-        log(`日记：${r.chars} 字 → ${r.date}`);
+        log(`日记：${r.chars} 字 → ${r.date}（截至 ${new Date(lastAt).toLocaleTimeString('zh-CN')}）`);
       } else {
         warn(`日记太短（${r.reason}），这次不写`);
       }
