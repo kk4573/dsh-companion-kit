@@ -1,0 +1,37 @@
+{
+  "name": "dsh-companion-qq",
+  "version": "0.1.0",
+  "description": "陪伴体的 QQ 接入：自动启停 SnowLuma 与桥进程，带健康守护。",
+  "type": "module",
+  "license": "MIT",
+  "author": "kk",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "qq",
+    "snowluma",
+    "companion"
+  ],
+  "exports": {
+    ".": "./src/host/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0-rc.2"
+  }
+}

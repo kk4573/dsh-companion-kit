@@ -1,0 +1,24 @@
+# 陪伴体 QQ 接入 —— 自动启停 SnowLuma 与桥，带健康守护。
+#
+# 这个文件必须是**顶层 YAML 数组**。
+# 路径留空 = 用相对本仓库的默认位置；别人的机器上要指向自己的安装目录。
+
+- insert:
+    - id: companion-qq
+      name: 'dsh-companion-qq'
+      config:
+        enabled: true
+        # SnowLuma 目录（含 launcher.bat）。留空 = <插件目录>/../../../vendor/SnowLuma
+        snowlumaDir: ''
+        # 桥目录（含 src/bridge.js）。留空 = <插件目录>/../../../upstream/qq-bridge
+        bridgeDir: ''
+        # 桥监听的端口
+        bridgePort: 3100
+        # 健康检查间隔（毫秒）。默认 5 分钟。
+        healthIntervalMs: 300000
+        # 连续失败几次后停手（避免无限重试刷日志）
+        maxConsecutiveFailures: 3
+        # 退避倍数：5 分钟 → 15 → 30 封顶
+        backoffMinutes: [5, 15, 30]
+        # DSH 自己的地址（桥要调它）
+        dshBaseUrl: 'http://127.0.0.1:3080'
