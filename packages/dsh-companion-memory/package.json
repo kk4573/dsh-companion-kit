@@ -1,0 +1,47 @@
+{
+  "name": "dsh-companion-memory",
+  "version": "0.1.0",
+  "description": "陪伴体记忆：关于他的事实、第一人称日记、按相关度召回，带分级遗忘。",
+  "type": "module",
+  "license": "MIT",
+  "author": "kk",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "companion",
+    "memory",
+    "diary",
+    "ai-companion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kk4573/dsh-companion-kit.git",
+    "directory": "packages/dsh-companion-memory"
+  },
+  "homepage": "https://github.com/kk4573/dsh-companion-kit#readme",
+  "bugs": {
+    "url": "https://github.com/kk4573/dsh-companion-kit/issues"
+  },
+  "exports": {
+    ".": "./src/host/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0-rc.2"
+  }
+}

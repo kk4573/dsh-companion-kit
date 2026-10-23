@@ -1,0 +1,25 @@
+# 陪伴体记忆插件 —— 让她记得他这个人。
+#
+# 这个文件必须是**顶层 YAML 数组**，否则 loader 会直接抛错。
+# `id` 同时是设置项的命名空间；`name` 必须等于 package.json 的 name。
+
+- insert:
+    - id: companion-memory
+      name: 'dsh-companion-memory'
+      config:
+        # 记忆目录。留空 = ~/.dsh/companion-memory
+        # 指向现有的 memory/<personaId> 即可直接复用已有记忆，不用迁移。
+        dataDir: ''
+        enabled: true
+        # 注入预算（token）。core 全量 + 日记最近两天 + 相关往事 top3，约 800。
+        budgetTokens: 1200
+        # 日记注入最近几天
+        diaryDays: 2
+        # 相关往事条数
+        recallTopK: 3
+        # 召回里保留的随机性（0 = 永远最相关，像数据库；0.1 = 偶尔想起别的）
+        recallJitter: 0.12
+        # 「刚提过」的惩罚强度：同一件事连着被提起会很假
+        recentlyMentionedPenalty: 0.5
+        # 记忆条目的默认 salience（重要度 0~1）
+        defaultSalience: 0.5
