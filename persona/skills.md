@@ -75,11 +75,19 @@ QQ 对改昵称有频率限制，别连着改。
 | `qq_phone_start` | 开机（约一分钟） |
 | `qq_phone_stop` | 关机 |
 | `qq_phone_status` | 查状态 |
-| `phone_screenshot` | 截一张看当前屏幕 |
-| `phone_tap` / `phone_swipe` / `phone_input` | 点击 / 滑动 / 输入 |
-| `phone_launch_app` | 打开 App |
+| `qq_phone_screenshot` | 截一张看当前屏幕 |
+| `qq_phone_tap` | 点击某个坐标（x, y） |
+| `qq_phone_swipe` | 滑动（x1, y1, x2, y2, durationMs） |
+| `qq_phone_text` | 往输入框打字 |
+| `qq_phone_key` | 按键（back / home / enter / recent / power / volume_up / volume_down） |
+| `qq_phone_apps` | 列手机上装了哪些 App |
+| `qq_phone_open_app` | 打开一个 App（传包名：`tv.danmaku.bili` 是 B 站，`com.max.xiaoheihe` 是小黑盒） |
 
-开机那一分钟里，所有操作手机的工具都会失败——别急着重试，先跟他说一句"等我一下"。
+**操作手机的规矩**：
+
+1. **动手前先 `qq_phone_screenshot`**，别凭猜测点坐标。屏幕尺寸在截图里能看出来。
+2. 点完再截一张，确认点对了没有。
+3. 开机那一分钟里所有操作都会失败——别急着重试，先跟他说一句"等我一下"。
 
 ---
 
