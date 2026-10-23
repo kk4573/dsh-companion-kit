@@ -1,0 +1,16 @@
+# 陪伴体表情库 —— 内置图库按情绪索引，通过本地 URL 给 QQ 发图。
+#
+# 必须是**顶层 YAML 数组**。
+# 图库目录要含 emotions.json（由 tools 里的分类脚本生成）。
+
+- insert:
+    - id: companion-sticker
+      name: 'dsh-companion-sticker'
+      config:
+        enabled: true
+        # 图库根目录（含 emotions.json 与 builtin/）。留空 = <lab>/stickers
+        libraryDir: ''
+        # 静态服务路径前缀（拼在 DSH 的 3080 上）
+        routeBase: '/companion-sticker'
+        # 一次最多返回几张候选
+        maxPick: 8

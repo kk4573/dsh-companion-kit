@@ -1,0 +1,20 @@
+{
+  "name": "dsh-companion-sticker",
+  "version": "0.1.0",
+  "description": "陪伴体表情库：内置图库按情绪索引，提供 URL 给 QQ 发图。",
+  "type": "module",
+  "license": "MIT",
+  "author": "kk",
+  "keywords": ["dsh", "dsh-plugin", "sticker", "emoji", "companion"],
+  "exports": {
+    ".": "./src/host/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.0.5" },
+  "engines": { "node": ">=22", "dsh": ">=0.2.0-rc.2" }
+}

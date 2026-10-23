@@ -1,0 +1,2190 @@
+{
+  "emotions": {
+    "angry": 12,
+    "awkward": 36,
+    "happy": 40,
+    "love": 11,
+    "misc": 221,
+    "ok": 1,
+    "sad": 16,
+    "shy": 5,
+    "surprise": 14,
+    "tired": 3
+  },
+  "buckets": {
+    "happy": [
+      {
+        "name": "[doge_金箍]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/doge_金箍.png",
+        "url_path": "/companion-sticker/小黄脸/doge_金箍.png"
+      },
+      {
+        "name": "[笑哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/笑哭.png",
+        "url_path": "/companion-sticker/小黄脸/笑哭.png"
+      },
+      {
+        "name": "[星星眼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/星星眼.png",
+        "url_path": "/companion-sticker/小黄脸/星星眼.png"
+      },
+      {
+        "name": "[微笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/微笑.png",
+        "url_path": "/companion-sticker/小黄脸/微笑.png"
+      },
+      {
+        "name": "[打call]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/打call.png",
+        "url_path": "/companion-sticker/小黄脸/打call.png"
+      },
+      {
+        "name": "[喜极而泣]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/喜极而泣.png",
+        "url_path": "/companion-sticker/小黄脸/喜极而泣.png"
+      },
+      {
+        "name": "[妙啊]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/妙啊.png",
+        "url_path": "/companion-sticker/小黄脸/妙啊.png"
+      },
+      {
+        "name": "[笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/笑.png",
+        "url_path": "/companion-sticker/小黄脸/笑.png"
+      },
+      {
+        "name": "[喜欢]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/喜欢.png",
+        "url_path": "/companion-sticker/小黄脸/喜欢.png"
+      },
+      {
+        "name": "[偷笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/偷笑.png",
+        "url_path": "/companion-sticker/小黄脸/偷笑.png"
+      },
+      {
+        "name": "[大笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/大笑.png",
+        "url_path": "/companion-sticker/小黄脸/大笑.png"
+      },
+      {
+        "name": "[惊喜]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/惊喜.png",
+        "url_path": "/companion-sticker/小黄脸/惊喜.png"
+      },
+      {
+        "name": "[点赞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/点赞.png",
+        "url_path": "/companion-sticker/小黄脸/点赞.png"
+      },
+      {
+        "name": "[鼓掌]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鼓掌.png",
+        "url_path": "/companion-sticker/小黄脸/鼓掌.png"
+      },
+      {
+        "name": "[颂乐人偶_眯眼笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/颂乐人偶_眯眼笑.png",
+        "url_path": "/companion-sticker/小黄脸/颂乐人偶_眯眼笑.png"
+      },
+      {
+        "name": "[兔兔岛_开心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/兔兔岛_开心.png",
+        "url_path": "/companion-sticker/小黄脸/兔兔岛_开心.png"
+      },
+      {
+        "name": "[重返未来1999_赞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/重返未来1999_赞.png",
+        "url_path": "/companion-sticker/小黄脸/重返未来1999_赞.png"
+      },
+      {
+        "name": "[胆大党_微笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/胆大党_微笑.png",
+        "url_path": "/companion-sticker/小黄脸/胆大党_微笑.png"
+      },
+      {
+        "name": "[支持]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/支持.png",
+        "url_path": "/companion-sticker/小黄脸/支持.png"
+      },
+      {
+        "name": "[牛年]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/牛年.png",
+        "url_path": "/companion-sticker/小黄脸/牛年.png"
+      },
+      {
+        "name": "[少女乐团派对_开心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_开心.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_开心.png"
+      },
+      {
+        "name": "[怪兽8号_开心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/怪兽8号_开心.png",
+        "url_path": "/companion-sticker/小黄脸/怪兽8号_开心.png"
+      },
+      {
+        "name": "[FGO_开心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_开心.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_开心.png"
+      },
+      {
+        "name": "[初音未来_大笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/初音未来_大笑.png",
+        "url_path": "/companion-sticker/小黄脸/初音未来_大笑.png"
+      },
+      {
+        "name": "[无悔华夏_点赞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无悔华夏_点赞.png",
+        "url_path": "/companion-sticker/小黄脸/无悔华夏_点赞.png"
+      },
+      {
+        "name": "[奥比岛_点赞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奥比岛_点赞.png",
+        "url_path": "/companion-sticker/小黄脸/奥比岛_点赞.png"
+      },
+      {
+        "name": "[奥比岛_喜欢]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奥比岛_喜欢.png",
+        "url_path": "/companion-sticker/小黄脸/奥比岛_喜欢.png"
+      },
+      {
+        "name": "[以闪亮之名_星星眼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_星星眼.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_星星眼.png"
+      },
+      {
+        "name": "[元梦_打call]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/元梦_打call.png",
+        "url_path": "/companion-sticker/小黄脸/元梦_打call.png"
+      },
+      {
+        "name": "[元梦_点赞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/元梦_点赞.png",
+        "url_path": "/companion-sticker/小黄脸/元梦_点赞.png"
+      },
+      {
+        "name": "[明日方舟_打call]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_打call.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_打call.png"
+      },
+      {
+        "name": "[明日方舟终末地_笑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_笑.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_笑.png"
+      },
+      {
+        "name": "[热词系列_妙啊]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_妙啊.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_妙啊.png"
+      },
+      {
+        "name": "[tv_坏笑]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_坏笑.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_坏笑.png"
+      },
+      {
+        "name": "[tv_斜眼笑]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_斜眼笑.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_斜眼笑.png"
+      },
+      {
+        "name": "[tv_微笑]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_微笑.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_微笑.png"
+      },
+      {
+        "name": "[tv_鼓掌]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_鼓掌.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_鼓掌.png"
+      },
+      {
+        "name": "[tv_笑哭]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_笑哭.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_笑哭.png"
+      },
+      {
+        "name": "[tv_点赞]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_点赞.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_点赞.png"
+      },
+      {
+        "name": "[tv_偷笑]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_偷笑.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_偷笑.png"
+      }
+    ],
+    "misc": [
+      {
+        "name": "[蹲蹲]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/蹲蹲.png",
+        "url_path": "/companion-sticker/小黄脸/蹲蹲.png"
+      },
+      {
+        "name": "[吃瓜]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/吃瓜.png",
+        "url_path": "/companion-sticker/小黄脸/吃瓜.png"
+      },
+      {
+        "name": "[辣眼睛]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/辣眼睛.png",
+        "url_path": "/companion-sticker/小黄脸/辣眼睛.png"
+      },
+      {
+        "name": "[呲牙]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/呲牙.png",
+        "url_path": "/companion-sticker/小黄脸/呲牙.png"
+      },
+      {
+        "name": "[歪嘴]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/歪嘴.png",
+        "url_path": "/companion-sticker/小黄脸/歪嘴.png"
+      },
+      {
+        "name": "[调皮]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/调皮.png",
+        "url_path": "/companion-sticker/小黄脸/调皮.png"
+      },
+      {
+        "name": "[嗑瓜子]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/嗑瓜子.png",
+        "url_path": "/companion-sticker/小黄脸/嗑瓜子.png"
+      },
+      {
+        "name": "[藏狐]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/藏狐.png",
+        "url_path": "/companion-sticker/小黄脸/藏狐.png"
+      },
+      {
+        "name": "[嘟嘟]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/嘟嘟.png",
+        "url_path": "/companion-sticker/小黄脸/嘟嘟.png"
+      },
+      {
+        "name": "[酸了]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/酸了.png",
+        "url_path": "/companion-sticker/小黄脸/酸了.png"
+      },
+      {
+        "name": "[阴险]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/阴险.png",
+        "url_path": "/companion-sticker/小黄脸/阴险.png"
+      },
+      {
+        "name": "[抠鼻]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/抠鼻.png",
+        "url_path": "/companion-sticker/小黄脸/抠鼻.png"
+      },
+      {
+        "name": "[灵魂出窍]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/灵魂出窍.png",
+        "url_path": "/companion-sticker/小黄脸/灵魂出窍.png"
+      },
+      {
+        "name": "[傲娇]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/傲娇.png",
+        "url_path": "/companion-sticker/小黄脸/傲娇.png"
+      },
+      {
+        "name": "[疼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/疼.png",
+        "url_path": "/companion-sticker/小黄脸/疼.png"
+      },
+      {
+        "name": "[冷]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/冷.png",
+        "url_path": "/companion-sticker/小黄脸/冷.png"
+      },
+      {
+        "name": "[热]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/热.png",
+        "url_path": "/companion-sticker/小黄脸/热.png"
+      },
+      {
+        "name": "[生病]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/生病.png",
+        "url_path": "/companion-sticker/小黄脸/生病.png"
+      },
+      {
+        "name": "[捂眼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/捂眼.png",
+        "url_path": "/companion-sticker/小黄脸/捂眼.png"
+      },
+      {
+        "name": "[嘘声]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/嘘声.png",
+        "url_path": "/companion-sticker/小黄脸/嘘声.png"
+      },
+      {
+        "name": "[再见]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/再见.png",
+        "url_path": "/companion-sticker/小黄脸/再见.png"
+      },
+      {
+        "name": "[抓狂]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/抓狂.png",
+        "url_path": "/companion-sticker/小黄脸/抓狂.png"
+      },
+      {
+        "name": "[哈欠]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/哈欠.png",
+        "url_path": "/companion-sticker/小黄脸/哈欠.png"
+      },
+      {
+        "name": "[奋斗]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奋斗.png",
+        "url_path": "/companion-sticker/小黄脸/奋斗.png"
+      },
+      {
+        "name": "[墨镜]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/墨镜.png",
+        "url_path": "/companion-sticker/小黄脸/墨镜.png"
+      },
+      {
+        "name": "[口罩]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/口罩.png",
+        "url_path": "/companion-sticker/小黄脸/口罩.png"
+      },
+      {
+        "name": "[撇嘴]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/撇嘴.png",
+        "url_path": "/companion-sticker/小黄脸/撇嘴.png"
+      },
+      {
+        "name": "[黑眼圈_金箍]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黑眼圈_金箍.png",
+        "url_path": "/companion-sticker/小黄脸/黑眼圈_金箍.png"
+      },
+      {
+        "name": "[猴哥]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/猴哥.png",
+        "url_path": "/companion-sticker/小黄脸/猴哥.png"
+      },
+      {
+        "name": "[鸭科夫_干嘛鸭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸭科夫_干嘛鸭.png",
+        "url_path": "/companion-sticker/小黄脸/鸭科夫_干嘛鸭.png"
+      },
+      {
+        "name": "[鸭科夫_红温鸭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸭科夫_红温鸭.png",
+        "url_path": "/companion-sticker/小黄脸/鸭科夫_红温鸭.png"
+      },
+      {
+        "name": "[黑猫]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黑猫.png",
+        "url_path": "/companion-sticker/小黄脸/黑猫.png"
+      },
+      {
+        "name": "[三花猫]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/三花猫.png",
+        "url_path": "/companion-sticker/小黄脸/三花猫.png"
+      },
+      {
+        "name": "[折耳猫]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/折耳猫.png",
+        "url_path": "/companion-sticker/小黄脸/折耳猫.png"
+      },
+      {
+        "name": "[银魂_justaway]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/银魂_justaway.png",
+        "url_path": "/companion-sticker/小黄脸/银魂_justaway.png"
+      },
+      {
+        "name": "[怪兽8号_奇可露]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/怪兽8号_奇可露.png",
+        "url_path": "/companion-sticker/小黄脸/怪兽8号_奇可露.png"
+      },
+      {
+        "name": "[坂本_佛系]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/坂本_佛系.png",
+        "url_path": "/companion-sticker/小黄脸/坂本_佛系.png"
+      },
+      {
+        "name": "[龙年]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/龙年.png",
+        "url_path": "/companion-sticker/小黄脸/龙年.png"
+      },
+      {
+        "name": "[豹富]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/豹富.png",
+        "url_path": "/companion-sticker/小黄脸/豹富.png"
+      },
+      {
+        "name": "[兔兔岛_吃面]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/兔兔岛_吃面.png",
+        "url_path": "/companion-sticker/小黄脸/兔兔岛_吃面.png"
+      },
+      {
+        "name": "[重返未来1999_喂]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/重返未来1999_喂.png",
+        "url_path": "/companion-sticker/小黄脸/重返未来1999_喂.png"
+      },
+      {
+        "name": "[重返未来1999_谢谢老板]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/重返未来1999_谢谢老板.png",
+        "url_path": "/companion-sticker/小黄脸/重返未来1999_谢谢老板.png"
+      },
+      {
+        "name": "[重返未来1999_什么]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/重返未来1999_什么.png",
+        "url_path": "/companion-sticker/小黄脸/重返未来1999_什么.png"
+      },
+      {
+        "name": "[水稻]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/水稻.png",
+        "url_path": "/companion-sticker/小黄脸/水稻.png"
+      },
+      {
+        "name": "[奶茶干杯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奶茶干杯.png",
+        "url_path": "/companion-sticker/小黄脸/奶茶干杯.png"
+      },
+      {
+        "name": "[汤圆]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/汤圆.png",
+        "url_path": "/companion-sticker/小黄脸/汤圆.png"
+      },
+      {
+        "name": "[锦鲤]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/锦鲤.png",
+        "url_path": "/companion-sticker/小黄脸/锦鲤.png"
+      },
+      {
+        "name": "[福到了]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/福到了.png",
+        "url_path": "/companion-sticker/小黄脸/福到了.png"
+      },
+      {
+        "name": "[鸡腿]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸡腿.png",
+        "url_path": "/companion-sticker/小黄脸/鸡腿.png"
+      },
+      {
+        "name": "[雪花]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/雪花.png",
+        "url_path": "/companion-sticker/小黄脸/雪花.png"
+      },
+      {
+        "name": "[视频卫星]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/视频卫星.png",
+        "url_path": "/companion-sticker/小黄脸/视频卫星.png"
+      },
+      {
+        "name": "[干杯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/干杯.png",
+        "url_path": "/companion-sticker/小黄脸/干杯.png"
+      },
+      {
+        "name": "[黑洞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黑洞.png",
+        "url_path": "/companion-sticker/小黄脸/黑洞.png"
+      },
+      {
+        "name": "[胜利]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/胜利.png",
+        "url_path": "/companion-sticker/小黄脸/胜利.png"
+      },
+      {
+        "name": "[加油]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/加油.png",
+        "url_path": "/companion-sticker/小黄脸/加油.png"
+      },
+      {
+        "name": "[响指]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/响指.png",
+        "url_path": "/companion-sticker/小黄脸/响指.png"
+      },
+      {
+        "name": "[保佑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保佑.png",
+        "url_path": "/companion-sticker/小黄脸/保佑.png"
+      },
+      {
+        "name": "[福]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/福.png",
+        "url_path": "/companion-sticker/小黄脸/福.png"
+      },
+      {
+        "name": "[跪了]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/跪了.png",
+        "url_path": "/companion-sticker/小黄脸/跪了.png"
+      },
+      {
+        "name": "[怪我咯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/怪我咯.png",
+        "url_path": "/companion-sticker/小黄脸/怪我咯.png"
+      },
+      {
+        "name": "[香格里拉边境]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/香格里拉边境.png",
+        "url_path": "/companion-sticker/小黄脸/香格里拉边境.png"
+      },
+      {
+        "name": "[老鼠]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/老鼠.png",
+        "url_path": "/companion-sticker/小黄脸/老鼠.png"
+      },
+      {
+        "name": "[兔年]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/兔年.png",
+        "url_path": "/companion-sticker/小黄脸/兔年.png"
+      },
+      {
+        "name": "[三星堆]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/三星堆.png",
+        "url_path": "/companion-sticker/小黄脸/三星堆.png"
+      },
+      {
+        "name": "[桃源_给花花]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/桃源_给花花.png",
+        "url_path": "/companion-sticker/小黄脸/桃源_给花花.png"
+      },
+      {
+        "name": "[桃源_缘分]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/桃源_缘分.png",
+        "url_path": "/companion-sticker/小黄脸/桃源_缘分.png"
+      },
+      {
+        "name": "[桃源_傲娇]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/桃源_傲娇.png",
+        "url_path": "/companion-sticker/小黄脸/桃源_傲娇.png"
+      },
+      {
+        "name": "[桃源_欢呼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/桃源_欢呼.png",
+        "url_path": "/companion-sticker/小黄脸/桃源_欢呼.png"
+      },
+      {
+        "name": "[桃源_乖巧]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/桃源_乖巧.png",
+        "url_path": "/companion-sticker/小黄脸/桃源_乖巧.png"
+      },
+      {
+        "name": "[鸣潮_好呀]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_好呀.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_好呀.png"
+      },
+      {
+        "name": "[鸣潮_咦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_咦.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_咦.png"
+      },
+      {
+        "name": "[鸣潮_嘿]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_嘿.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_嘿.png"
+      },
+      {
+        "name": "[鸣潮_嗨]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_嗨.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_嗨.png"
+      },
+      {
+        "name": "[鸣潮_祈愿]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_祈愿.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_祈愿.png"
+      },
+      {
+        "name": "[鸣潮_你好]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_你好.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_你好.png"
+      },
+      {
+        "name": "[鸣潮_嘿嘿]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_嘿嘿.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_嘿嘿.png"
+      },
+      {
+        "name": "[洛天依]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/洛天依.png",
+        "url_path": "/companion-sticker/小黄脸/洛天依.png"
+      },
+      {
+        "name": "[少女乐团派对_派对]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_派对.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_派对.png"
+      },
+      {
+        "name": "[少女乐团派对_等一下]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_等一下.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_等一下.png"
+      },
+      {
+        "name": "[少女乐团派对_期待]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_期待.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_期待.png"
+      },
+      {
+        "name": "[少女乐团派对_感想]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_感想.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_感想.png"
+      },
+      {
+        "name": "[白荆回廊_欢呼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_欢呼.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_欢呼.png"
+      },
+      {
+        "name": "[白荆回廊_期待]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_期待.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_期待.png"
+      },
+      {
+        "name": "[白荆回廊_好好好]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_好好好.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_好好好.png"
+      },
+      {
+        "name": "[坎公骑冠剑_吃鸡]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/坎公骑冠剑_吃鸡.png",
+        "url_path": "/companion-sticker/小黄脸/坎公骑冠剑_吃鸡.png"
+      },
+      {
+        "name": "[坎公骑冠剑_钻石]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/坎公骑冠剑_钻石.png",
+        "url_path": "/companion-sticker/小黄脸/坎公骑冠剑_钻石.png"
+      },
+      {
+        "name": "[来古-疑问]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来古-疑问.png",
+        "url_path": "/companion-sticker/小黄脸/来古-疑问.png"
+      },
+      {
+        "name": "[来古-沉思]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来古-沉思.png",
+        "url_path": "/companion-sticker/小黄脸/来古-沉思.png"
+      },
+      {
+        "name": "[来古-震撼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来古-震撼.png",
+        "url_path": "/companion-sticker/小黄脸/来古-震撼.png"
+      },
+      {
+        "name": "[来古-注意]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来古-注意.png",
+        "url_path": "/companion-sticker/小黄脸/来古-注意.png"
+      },
+      {
+        "name": "[FGO_跪]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_跪.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_跪.png"
+      },
+      {
+        "name": "[FGO_好耶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_好耶.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_好耶.png"
+      },
+      {
+        "name": "[FGO_好棒]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_好棒.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_好棒.png"
+      },
+      {
+        "name": "[FGO_礼物]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_礼物.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_礼物.png"
+      },
+      {
+        "name": "[FGO_耶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_耶.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_耶.png"
+      },
+      {
+        "name": "[FGO_偷看]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_偷看.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_偷看.png"
+      },
+      {
+        "name": "[原神_哼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_哼.png",
+        "url_path": "/companion-sticker/小黄脸/原神_哼.png"
+      },
+      {
+        "name": "[原神_欸嘿]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_欸嘿.png",
+        "url_path": "/companion-sticker/小黄脸/原神_欸嘿.png"
+      },
+      {
+        "name": "[原神_喝茶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_喝茶.png",
+        "url_path": "/companion-sticker/小黄脸/原神_喝茶.png"
+      },
+      {
+        "name": "[保卫萝卜_笔芯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保卫萝卜_笔芯.png",
+        "url_path": "/companion-sticker/小黄脸/保卫萝卜_笔芯.png"
+      },
+      {
+        "name": "[无悔华夏_不愧是你]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无悔华夏_不愧是你.png",
+        "url_path": "/companion-sticker/小黄脸/无悔华夏_不愧是你.png"
+      },
+      {
+        "name": "[无悔华夏_吃瓜]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无悔华夏_吃瓜.png",
+        "url_path": "/companion-sticker/小黄脸/无悔华夏_吃瓜.png"
+      },
+      {
+        "name": "[无悔华夏_达咩]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无悔华夏_达咩.png",
+        "url_path": "/companion-sticker/小黄脸/无悔华夏_达咩.png"
+      },
+      {
+        "name": "[无悔华夏_好耶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无悔华夏_好耶.png",
+        "url_path": "/companion-sticker/小黄脸/无悔华夏_好耶.png"
+      },
+      {
+        "name": "[奥比岛_搬砖]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奥比岛_搬砖.png",
+        "url_path": "/companion-sticker/小黄脸/奥比岛_搬砖.png"
+      },
+      {
+        "name": "[奥比岛_击爪]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奥比岛_击爪.png",
+        "url_path": "/companion-sticker/小黄脸/奥比岛_击爪.png"
+      },
+      {
+        "name": "[黎明觉醒_石化鸦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黎明觉醒_石化鸦.png",
+        "url_path": "/companion-sticker/小黄脸/黎明觉醒_石化鸦.png"
+      },
+      {
+        "name": "[黎明觉醒_摊手鸦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黎明觉醒_摊手鸦.png",
+        "url_path": "/companion-sticker/小黄脸/黎明觉醒_摊手鸦.png"
+      },
+      {
+        "name": "[以闪亮之名_吃瓜]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_吃瓜.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_吃瓜.png"
+      },
+      {
+        "name": "[以闪亮之名_好耶!]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_好耶!.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_好耶!.png"
+      },
+      {
+        "name": "[以闪亮之名_针不戳]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_针不戳.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_针不戳.png"
+      },
+      {
+        "name": "[无限暖暖_暖暖]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_暖暖.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_暖暖.png"
+      },
+      {
+        "name": "[无限暖暖_大喵]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_大喵.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_大喵.png"
+      },
+      {
+        "name": "[无限暖暖_单品灵]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_单品灵.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_单品灵.png"
+      },
+      {
+        "name": "[无限暖暖_美食家蜜蜂]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_美食家蜜蜂.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_美食家蜜蜂.png"
+      },
+      {
+        "name": "[无限暖暖_袜袜羊]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_袜袜羊.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_袜袜羊.png"
+      },
+      {
+        "name": "[无限暖暖_围兜狸猫]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_围兜狸猫.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_围兜狸猫.png"
+      },
+      {
+        "name": "[无限暖暖_毛线汪汪]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_毛线汪汪.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_毛线汪汪.png"
+      },
+      {
+        "name": "[明日方舟_扶额]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_扶额.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_扶额.png"
+      },
+      {
+        "name": "[明日方舟_敬礼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_敬礼.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_敬礼.png"
+      },
+      {
+        "name": "[明日方舟_装傻]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_装傻.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_装傻.png"
+      },
+      {
+        "name": "[明日方舟终末地_哈欠]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_哈欠.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_哈欠.png"
+      },
+      {
+        "name": "[明日方舟终末地_喝茶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_喝茶.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_喝茶.png"
+      },
+      {
+        "name": "[明日方舟终末地_什么]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_什么.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_什么.png"
+      },
+      {
+        "name": "[来自星尘_盯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来自星尘_盯.png",
+        "url_path": "/companion-sticker/小黄脸/来自星尘_盯.png"
+      },
+      {
+        "name": "[来自星尘_wink]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来自星尘_wink.png",
+        "url_path": "/companion-sticker/小黄脸/来自星尘_wink.png"
+      },
+      {
+        "name": "[泡姆泡姆_棒]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/泡姆泡姆_棒.png",
+        "url_path": "/companion-sticker/小黄脸/泡姆泡姆_棒.png"
+      },
+      {
+        "name": "[泡姆泡姆_加油]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/泡姆泡姆_加油.png",
+        "url_path": "/companion-sticker/小黄脸/泡姆泡姆_加油.png"
+      },
+      {
+        "name": "[牧神记_一剑开皇]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/牧神记_一剑开皇.png",
+        "url_path": "/companion-sticker/热词系列一/牧神记_一剑开皇.png"
+      },
+      {
+        "name": "[热词系列_再给一集]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_再给一集.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_再给一集.png"
+      },
+      {
+        "name": "[热词系列_道友请了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_道友请了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_道友请了.png"
+      },
+      {
+        "name": "[热词系列_念头通达]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_念头通达.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_念头通达.png"
+      },
+      {
+        "name": "[热词表情_世萌双冠]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词表情_世萌双冠.png",
+        "url_path": "/companion-sticker/热词系列一/热词表情_世萌双冠.png"
+      },
+      {
+        "name": "[热词系列_谢谢老师]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_谢谢老师.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_谢谢老师.png"
+      },
+      {
+        "name": "[热词系列_干杯]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_干杯.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_干杯.png"
+      },
+      {
+        "name": "[热词系列_肥肠自信]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_肥肠自信.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_肥肠自信.png"
+      },
+      {
+        "name": "[热词系列_我故意的]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我故意的.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我故意的.png"
+      },
+      {
+        "name": "[热词系列_知识增加]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_知识增加.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_知识增加.png"
+      },
+      {
+        "name": "[热词系列_三连]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_三连.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_三连.png"
+      },
+      {
+        "name": "[热词系列_呵呵]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_呵呵.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_呵呵.png"
+      },
+      {
+        "name": "[热词系列_上任鹅城]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_上任鹅城.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_上任鹅城.png"
+      },
+      {
+        "name": "[热词系列_优雅]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_优雅.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_优雅.png"
+      },
+      {
+        "name": "[热词系列_好耶]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_好耶.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_好耶.png"
+      },
+      {
+        "name": "[热词系列_你币有了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_你币有了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_你币有了.png"
+      },
+      {
+        "name": "[热词系列_吹爆]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_吹爆.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_吹爆.png"
+      },
+      {
+        "name": "[念诗之王]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/念诗之王.png",
+        "url_path": "/companion-sticker/热词系列一/念诗之王.png"
+      },
+      {
+        "name": "[热词系列_对象]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_对象.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_对象.png"
+      },
+      {
+        "name": "[热词系列_洛水天依]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_洛水天依.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_洛水天依.png"
+      },
+      {
+        "name": "[热词系列_秀]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_秀.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_秀.png"
+      },
+      {
+        "name": "[热词系列_标准结局]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_标准结局.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_标准结局.png"
+      },
+      {
+        "name": "[热词系列_B站有房]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_B站有房.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_B站有房.png"
+      },
+      {
+        "name": "[热词系列_破防了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_破防了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_破防了.png"
+      },
+      {
+        "name": "[热词系列_多谢款待]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_多谢款待.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_多谢款待.png"
+      },
+      {
+        "name": "[热词系列_燃起来了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_燃起来了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_燃起来了.png"
+      },
+      {
+        "name": "[热词系列_赛博考古]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_赛博考古.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_赛博考古.png"
+      },
+      {
+        "name": "[热词系列_饮茶先啦]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_饮茶先啦.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_饮茶先啦.png"
+      },
+      {
+        "name": "[热词系列_再来亿遍]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_再来亿遍.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_再来亿遍.png"
+      },
+      {
+        "name": "[热词系列_热乎]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_热乎.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_热乎.png"
+      },
+      {
+        "name": "[热词系列_好活]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_好活.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_好活.png"
+      },
+      {
+        "name": "[热词系列_好家伙]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_好家伙.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_好家伙.png"
+      },
+      {
+        "name": "[热词系列_排面]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_排面.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_排面.png"
+      },
+      {
+        "name": "[热词系列_爷青回]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_爷青回.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_爷青回.png"
+      },
+      {
+        "name": "[热词系列_芜湖起飞]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_芜湖起飞.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_芜湖起飞.png"
+      },
+      {
+        "name": "[热词系列_夺笋呐]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_夺笋呐.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_夺笋呐.png"
+      },
+      {
+        "name": "[热词系列_两面包夹芝士]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_两面包夹芝士.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_两面包夹芝士.png"
+      },
+      {
+        "name": "[热词系列_梦幻联动]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_梦幻联动.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_梦幻联动.png"
+      },
+      {
+        "name": "[热词系列_保护]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_保护.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_保护.png"
+      },
+      {
+        "name": "[热词系列_可以]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_可以.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_可以.png"
+      },
+      {
+        "name": "[热词系列_希望没事]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_希望没事.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_希望没事.png"
+      },
+      {
+        "name": "[热词系列_DNA]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_DNA.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_DNA.png"
+      },
+      {
+        "name": "[热词系列_这次一定]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_这次一定.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_这次一定.png"
+      },
+      {
+        "name": "[热词系列_AWSL]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_AWSL.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_AWSL.png"
+      },
+      {
+        "name": "[热词系列_霸体在此]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_霸体在此.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_霸体在此.png"
+      },
+      {
+        "name": "[热词系列_递话筒]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_递话筒.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_递话筒.png"
+      },
+      {
+        "name": "[热词系列_你细品]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_你细品.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_你细品.png"
+      },
+      {
+        "name": "[热词系列_咕咕]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_咕咕.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_咕咕.png"
+      },
+      {
+        "name": "[热词系列_张三]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_张三.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_张三.png"
+      },
+      {
+        "name": "[热词系列_害]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_害.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_害.png"
+      },
+      {
+        "name": "[热词系列_我裂开了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我裂开了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我裂开了.png"
+      },
+      {
+        "name": "[热词系列_有内味了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_有内味了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_有内味了.png"
+      },
+      {
+        "name": "[热词系列_猛男必看]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_猛男必看.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_猛男必看.png"
+      },
+      {
+        "name": "[热词系列_奥力给]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_奥力给.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_奥力给.png"
+      },
+      {
+        "name": "[热词系列_神仙UP]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_神仙UP.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_神仙UP.png"
+      },
+      {
+        "name": "[热词系列_不愧是你]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_不愧是你.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_不愧是你.png"
+      },
+      {
+        "name": "[热词系列_高产]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_高产.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_高产.png"
+      },
+      {
+        "name": "[热词系列_真香]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_真香.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_真香.png"
+      },
+      {
+        "name": "[热词系列_我全都要]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我全都要.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我全都要.png"
+      },
+      {
+        "name": "[热词系列_爷关更]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_爷关更.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_爷关更.png"
+      },
+      {
+        "name": "[热词系列_锤]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_锤.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_锤.png"
+      },
+      {
+        "name": "[热词系列_我酸了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我酸了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我酸了.png"
+      },
+      {
+        "name": "[热词系列_有生之年]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_有生之年.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_有生之年.png"
+      },
+      {
+        "name": "[热词系列_镇站之宝]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_镇站之宝.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_镇站之宝.png"
+      },
+      {
+        "name": "[热词系列_我太南了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我太南了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我太南了.png"
+      },
+      {
+        "name": "[热词系列_完结撒花]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_完结撒花.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_完结撒花.png"
+      },
+      {
+        "name": "[热词系列_大师球]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_大师球.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_大师球.png"
+      },
+      {
+        "name": "[热词系列_知识盲区]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_知识盲区.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_知识盲区.png"
+      },
+      {
+        "name": "[热词系列_“狼火”]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_“狼火”.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_“狼火”.png"
+      },
+      {
+        "name": "[热词系列_你可真星]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_你可真星.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_你可真星.png"
+      },
+      {
+        "name": "[凡人修仙传_退至身后]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/凡人修仙传_退至身后.png",
+        "url_path": "/companion-sticker/热词系列一/凡人修仙传_退至身后.png"
+      },
+      {
+        "name": "[凡人修仙传_给个交代]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/凡人修仙传_给个交代.png",
+        "url_path": "/companion-sticker/热词系列一/凡人修仙传_给个交代.png"
+      },
+      {
+        "name": "[tv_呕吐]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_呕吐.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_呕吐.png"
+      },
+      {
+        "name": "[tv_疑问]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_疑问.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_疑问.png"
+      },
+      {
+        "name": "[tv_抠鼻]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_抠鼻.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_抠鼻.png"
+      },
+      {
+        "name": "[tv_调皮]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_调皮.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_调皮.png"
+      },
+      {
+        "name": "[tv_晕]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_晕.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_晕.png"
+      },
+      {
+        "name": "[tv_色]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_色.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_色.png"
+      },
+      {
+        "name": "[tv_吐血]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_吐血.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_吐血.png"
+      },
+      {
+        "name": "[tv_无奈]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_无奈.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_无奈.png"
+      },
+      {
+        "name": "[tv_再见]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_再见.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_再见.png"
+      },
+      {
+        "name": "[tv_抓狂]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_抓狂.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_抓狂.png"
+      },
+      {
+        "name": "[tv_闭嘴]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_闭嘴.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_闭嘴.png"
+      },
+      {
+        "name": "[tv_腼腆]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_腼腆.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_腼腆.png"
+      },
+      {
+        "name": "[tv_馋]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_馋.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_馋.png"
+      },
+      {
+        "name": "[tv_发财]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_发财.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_发财.png"
+      },
+      {
+        "name": "[tv_生病]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_生病.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_生病.png"
+      },
+      {
+        "name": "[tv_流鼻血]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_流鼻血.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_流鼻血.png"
+      },
+      {
+        "name": "[tv_大佬]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_大佬.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_大佬.png"
+      },
+      {
+        "name": "[tv_冷漠]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_冷漠.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_冷漠.png"
+      },
+      {
+        "name": "[tv_皱眉]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_皱眉.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_皱眉.png"
+      },
+      {
+        "name": "[tv_鬼脸]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_鬼脸.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_鬼脸.png"
+      },
+      {
+        "name": "[tv_调侃]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_调侃.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_调侃.png"
+      }
+    ],
+    "ok": [
+      {
+        "name": "[OK]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/OK.png",
+        "url_path": "/companion-sticker/小黄脸/OK.png"
+      }
+    ],
+    "awkward": [
+      {
+        "name": "[doge]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/doge.png",
+        "url_path": "/companion-sticker/小黄脸/doge.png"
+      },
+      {
+        "name": "[滑稽]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/滑稽.png",
+        "url_path": "/companion-sticker/小黄脸/滑稽.png"
+      },
+      {
+        "name": "[脱单doge]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/脱单doge.png",
+        "url_path": "/companion-sticker/小黄脸/脱单doge.png"
+      },
+      {
+        "name": "[疑惑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/疑惑.png",
+        "url_path": "/companion-sticker/小黄脸/疑惑.png"
+      },
+      {
+        "name": "[呆]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/呆.png",
+        "url_path": "/companion-sticker/小黄脸/呆.png"
+      },
+      {
+        "name": "[无语]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无语.png",
+        "url_path": "/companion-sticker/小黄脸/无语.png"
+      },
+      {
+        "name": "[尴尬]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/尴尬.png",
+        "url_path": "/companion-sticker/小黄脸/尴尬.png"
+      },
+      {
+        "name": "[思考]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/思考.png",
+        "url_path": "/companion-sticker/小黄脸/思考.png"
+      },
+      {
+        "name": "[翻白眼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/翻白眼.png",
+        "url_path": "/companion-sticker/小黄脸/翻白眼.png"
+      },
+      {
+        "name": "[鸭科夫_流汗鸭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸭科夫_流汗鸭.png",
+        "url_path": "/companion-sticker/小黄脸/鸭科夫_流汗鸭.png"
+      },
+      {
+        "name": "[我独自升级_疑惑]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/我独自升级_疑惑.png",
+        "url_path": "/companion-sticker/小黄脸/我独自升级_疑惑.png"
+      },
+      {
+        "name": "[鸣潮_嗯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_嗯.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_嗯.png"
+      },
+      {
+        "name": "[少女乐团派对_流汗]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_流汗.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_流汗.png"
+      },
+      {
+        "name": "[白荆回廊_无语]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_无语.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_无语.png"
+      },
+      {
+        "name": "[白荆回廊_尴尬]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_尴尬.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_尴尬.png"
+      },
+      {
+        "name": "[坎公骑冠剑_无语]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/坎公骑冠剑_无语.png",
+        "url_path": "/companion-sticker/小黄脸/坎公骑冠剑_无语.png"
+      },
+      {
+        "name": "[来古-呆滞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/来古-呆滞.png",
+        "url_path": "/companion-sticker/小黄脸/来古-呆滞.png"
+      },
+      {
+        "name": "[FGO_尴尬]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_尴尬.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_尴尬.png"
+      },
+      {
+        "name": "[FGO_无语]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_无语.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_无语.png"
+      },
+      {
+        "name": "[FGO_汗]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_汗.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_汗.png"
+      },
+      {
+        "name": "[原神_嗯]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_嗯.png",
+        "url_path": "/companion-sticker/小黄脸/原神_嗯.png"
+      },
+      {
+        "name": "[保卫萝卜_白眼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保卫萝卜_白眼.png",
+        "url_path": "/companion-sticker/小黄脸/保卫萝卜_白眼.png"
+      },
+      {
+        "name": "[保卫萝卜_问号]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保卫萝卜_问号.png",
+        "url_path": "/companion-sticker/小黄脸/保卫萝卜_问号.png"
+      },
+      {
+        "name": "[黎明觉醒_哼白眼鸦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黎明觉醒_哼白眼鸦.png",
+        "url_path": "/companion-sticker/小黄脸/黎明觉醒_哼白眼鸦.png"
+      },
+      {
+        "name": "[明日方舟_沉默]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_沉默.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_沉默.png"
+      },
+      {
+        "name": "[明日方舟终末地_愣住]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_愣住.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_愣住.png"
+      },
+      {
+        "name": "[热词系列_六到无语]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_六到无语.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_六到无语.png"
+      },
+      {
+        "name": "[热词系列_问号]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_问号.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_问号.png"
+      },
+      {
+        "name": "[tv_白眼]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_白眼.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_白眼.png"
+      },
+      {
+        "name": "[tv_doge]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_doge.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_doge.png"
+      },
+      {
+        "name": "[tv_呆]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_呆.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_呆.png"
+      },
+      {
+        "name": "[tv_思考]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_思考.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_思考.png"
+      },
+      {
+        "name": "[tv_流汗]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_流汗.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_流汗.png"
+      },
+      {
+        "name": "[tv_黑人问号]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_黑人问号.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_黑人问号.png"
+      },
+      {
+        "name": "[tv_尴尬]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_尴尬.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_尴尬.png"
+      },
+      {
+        "name": "[tv_目瞪口呆]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_目瞪口呆.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_目瞪口呆.png"
+      }
+    ],
+    "sad": [
+      {
+        "name": "[大哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/大哭.png",
+        "url_path": "/companion-sticker/小黄脸/大哭.png"
+      },
+      {
+        "name": "[委屈]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/委屈.png",
+        "url_path": "/companion-sticker/小黄脸/委屈.png"
+      },
+      {
+        "name": "[难过]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/难过.png",
+        "url_path": "/companion-sticker/小黄脸/难过.png"
+      },
+      {
+        "name": "[鸣潮_唉]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_唉.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_唉.png"
+      },
+      {
+        "name": "[保卫萝卜_哭哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保卫萝卜_哭哭.png",
+        "url_path": "/companion-sticker/小黄脸/保卫萝卜_哭哭.png"
+      },
+      {
+        "name": "[奥比岛_委屈]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/奥比岛_委屈.png",
+        "url_path": "/companion-sticker/小黄脸/奥比岛_委屈.png"
+      },
+      {
+        "name": "[元梦_大哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/元梦_大哭.png",
+        "url_path": "/companion-sticker/小黄脸/元梦_大哭.png"
+      },
+      {
+        "name": "[元梦_哭哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/元梦_哭哭.png",
+        "url_path": "/companion-sticker/小黄脸/元梦_哭哭.png"
+      },
+      {
+        "name": "[明日方舟_哭哭]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_哭哭.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_哭哭.png"
+      },
+      {
+        "name": "[热词系列_不孤鸟]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_不孤鸟.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_不孤鸟.png"
+      },
+      {
+        "name": "[热词系列_泪目]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_泪目.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_泪目.png"
+      },
+      {
+        "name": "[热词系列_我哭了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_我哭了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_我哭了.png"
+      },
+      {
+        "name": "[tv_难过]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_难过.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_难过.png"
+      },
+      {
+        "name": "[tv_委屈]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_委屈.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_委屈.png"
+      },
+      {
+        "name": "[tv_大哭]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_大哭.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_大哭.png"
+      },
+      {
+        "name": "[tv_流泪]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_流泪.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_流泪.png"
+      }
+    ],
+    "love": [
+      {
+        "name": "[给心心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/给心心.png",
+        "url_path": "/companion-sticker/小黄脸/给心心.png"
+      },
+      {
+        "name": "[爱心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/爱心.png",
+        "url_path": "/companion-sticker/小黄脸/爱心.png"
+      },
+      {
+        "name": "[抱拳]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/抱拳.png",
+        "url_path": "/companion-sticker/小黄脸/抱拳.png"
+      },
+      {
+        "name": "[拥抱]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/拥抱.png",
+        "url_path": "/companion-sticker/小黄脸/拥抱.png"
+      },
+      {
+        "name": "[黎明觉醒_比心鸦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黎明觉醒_比心鸦.png",
+        "url_path": "/companion-sticker/小黄脸/黎明觉醒_比心鸦.png"
+      },
+      {
+        "name": "[元梦_爱你]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/元梦_爱你.png",
+        "url_path": "/companion-sticker/小黄脸/元梦_爱你.png"
+      },
+      {
+        "name": "[无限暖暖_心愿精灵]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/无限暖暖_心愿精灵.png",
+        "url_path": "/companion-sticker/小黄脸/无限暖暖_心愿精灵.png"
+      },
+      {
+        "name": "[明日方舟终末地_比心]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟终末地_比心.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟终末地_比心.png"
+      },
+      {
+        "name": "[热词系列_爱了爱了]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_爱了爱了.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_爱了爱了.png"
+      },
+      {
+        "name": "[tv_亲亲]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_亲亲.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_亲亲.png"
+      },
+      {
+        "name": "[tv_可爱]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_可爱.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_可爱.png"
+      }
+    ],
+    "shy": [
+      {
+        "name": "[脸红]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/脸红.png",
+        "url_path": "/companion-sticker/小黄脸/脸红.png"
+      },
+      {
+        "name": "[害羞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/害羞.png",
+        "url_path": "/companion-sticker/小黄脸/害羞.png"
+      },
+      {
+        "name": "[捂脸]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/捂脸.png",
+        "url_path": "/companion-sticker/小黄脸/捂脸.png"
+      },
+      {
+        "name": "[少女乐团派对_害羞]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_害羞.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_害羞.png"
+      },
+      {
+        "name": "[tv_害羞]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_害羞.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_害羞.png"
+      }
+    ],
+    "surprise": [
+      {
+        "name": "[哦呼]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/哦呼.png",
+        "url_path": "/companion-sticker/小黄脸/哦呼.png"
+      },
+      {
+        "name": "[惊讶]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/惊讶.png",
+        "url_path": "/companion-sticker/小黄脸/惊讶.png"
+      },
+      {
+        "name": "[鸣潮_哇]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/鸣潮_哇.png",
+        "url_path": "/companion-sticker/小黄脸/鸣潮_哇.png"
+      },
+      {
+        "name": "[少女乐团派对_哇哦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/少女乐团派对_哇哦.png",
+        "url_path": "/companion-sticker/小黄脸/少女乐团派对_哇哦.png"
+      },
+      {
+        "name": "[白荆回廊_啊？]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/白荆回廊_啊？.png",
+        "url_path": "/companion-sticker/小黄脸/白荆回廊_啊？.png"
+      },
+      {
+        "name": "[原神_哇]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_哇.png",
+        "url_path": "/companion-sticker/小黄脸/原神_哇.png"
+      },
+      {
+        "name": "[保卫萝卜_哇]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/保卫萝卜_哇.png",
+        "url_path": "/companion-sticker/小黄脸/保卫萝卜_哇.png"
+      },
+      {
+        "name": "[以闪亮之名_哎？！]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_哎？！.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_哎？！.png"
+      },
+      {
+        "name": "[以闪亮之名_爱你哦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/以闪亮之名_爱你哦.png",
+        "url_path": "/companion-sticker/小黄脸/以闪亮之名_爱你哦.png"
+      },
+      {
+        "name": "[明日方舟_惊]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/明日方舟_惊.png",
+        "url_path": "/companion-sticker/小黄脸/明日方舟_惊.png"
+      },
+      {
+        "name": "[热词系列_美貌惊人]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_美貌惊人.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_美貌惊人.png"
+      },
+      {
+        "name": "[热词系列_哇酷哇酷]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_哇酷哇酷.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_哇酷哇酷.png"
+      },
+      {
+        "name": "[热词表情_哎呦不错哦]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词表情_哎呦不错哦.png",
+        "url_path": "/companion-sticker/热词系列一/热词表情_哎呦不错哦.png"
+      },
+      {
+        "name": "[tv_惊吓]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_惊吓.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_惊吓.png"
+      }
+    ],
+    "angry": [
+      {
+        "name": "[嫌弃]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/嫌弃.png",
+        "url_path": "/companion-sticker/小黄脸/嫌弃.png"
+      },
+      {
+        "name": "[生气]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/生气.png",
+        "url_path": "/companion-sticker/小黄脸/生气.png"
+      },
+      {
+        "name": "[生气_金箍]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/生气_金箍.png",
+        "url_path": "/companion-sticker/小黄脸/生气_金箍.png"
+      },
+      {
+        "name": "[FGO_怒]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/FGO_怒.png",
+        "url_path": "/companion-sticker/小黄脸/FGO_怒.png"
+      },
+      {
+        "name": "[原神_生气]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/原神_生气.png",
+        "url_path": "/companion-sticker/小黄脸/原神_生气.png"
+      },
+      {
+        "name": "[黎明觉醒_怒了鸦]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/黎明觉醒_怒了鸦.png",
+        "url_path": "/companion-sticker/小黄脸/黎明觉醒_怒了鸦.png"
+      },
+      {
+        "name": "[热词系列_发刀大队]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_发刀大队.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_发刀大队.png"
+      },
+      {
+        "name": "[热词系列_打卡]",
+        "package": "热词系列一",
+        "file": "builtin/热词系列一/热词系列_打卡.png",
+        "url_path": "/companion-sticker/热词系列一/热词系列_打卡.png"
+      },
+      {
+        "name": "[tv_生气]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_生气.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_生气.png"
+      },
+      {
+        "name": "[tv_发怒]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_发怒.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_发怒.png"
+      },
+      {
+        "name": "[tv_打脸]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_打脸.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_打脸.png"
+      },
+      {
+        "name": "[tv_鄙视]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_鄙视.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_鄙视.png"
+      }
+    ],
+    "tired": [
+      {
+        "name": "[兔兔岛_睡觉]",
+        "package": "小黄脸",
+        "file": "builtin/小黄脸/兔兔岛_睡觉.png",
+        "url_path": "/companion-sticker/小黄脸/兔兔岛_睡觉.png"
+      },
+      {
+        "name": "[tv_睡着]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_睡着.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_睡着.png"
+      },
+      {
+        "name": "[tv_困]",
+        "package": "tv_小电视",
+        "file": "builtin/tv_小电视/tv_困.png",
+        "url_path": "/companion-sticker/tv_小电视/tv_困.png"
+      }
+    ]
+  }
+}
