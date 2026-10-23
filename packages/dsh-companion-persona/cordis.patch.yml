@@ -1,0 +1,18 @@
+# 陪伴体人设 —— 把角色卡注入系统提示词，可热切换。
+#
+# 必须是**顶层 YAML 数组**。
+# 人设文件是普通 markdown，改完下一轮就生效（不用重启）。
+
+- insert:
+    - id: companion-persona
+      name: 'dsh-companion-persona'
+      config:
+        enabled: true
+        # 人设目录（放多个 .md，每个是一套人设）。留空 = <lab>/persona/roles
+        personaDir: ''
+        # 当前用哪一套（文件名去掉 .md）。留空 = 目录里第一个
+        current: ''
+        # 注入顺序：人设在前（0），记忆在后（100）
+        order: 0
+        # 单个人设文件的大小上限（字节），超过截断并在日志里警告
+        maxBytes: 40000
