@@ -123,11 +123,16 @@ export function apply(ctx, rawConfig) {
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     const limit = Math.max(1, Math.min(config.maxPick, Number(n) || 3));
-    return arr.slice(0, limit).map((e) => ({
-      name: String(e.name || ''),
-      package: String(e.package || ''),
-      url: `http://127.0.0.1:${config.staticPort}${config.routeBase}/${String(e.url_path || '').replace(/^\/companion-sticker\//, '')}`,
-    }));
+    return arr.slice(0, limit).map((e) => {
+      const rel = String(e.url_path || '').replace(/^\/companion-sticker\//, '');
+      return {
+        name: String(e.name || ''),
+        package: String(e.package || ''),
+        // 本地绝对路径：桥可以直接读文件发出去（不走网络，绕开环回地址限制）
+        path: path.resolve(builtinDir, rel),
+        url: `http://127.0.0.1:${config.staticPort}${config.routeBase}/${rel}`,
+      };
+    });
   }
 
   // ── 静态服务：把图库暴露成 URL ──────────────────────────
@@ -171,8 +176,17 @@ export function apply(ctx, rawConfig) {
   }
 
   // ── 工具 ──────────────────────────────────────────────
+  try {
+    const t = ctx.get('tools');
+    log(`tools 服务：${t ? '存在' : '不存在'}，键=${t ? Object.keys(t).join(',') : '-'}`);
+  } catch (err) {
+    log(`tools 探测失败：${err?.message ?? err}`);
+  }
+
   ctx.inject(['tools'], (scope) => {
-    scope.effect(() => scope.tools.register({
+    log(`回调触发：tools=${typeof scope.tools}，register=${typeof scope.tools?.register}`);
+    try {
+      scope.effect(() => scope.tools.register({
       name: 'sticker_stats',
       description: '看看自己的表情库里有哪些情绪分类、各有多少张。发之前想知道有什么可选时用。',
       parameters: { type: 'object', additionalProperties: false, properties: {} },
@@ -182,11 +196,19 @@ export function apply(ctx, rawConfig) {
           additionalProperties: false,
           properties: {
             total: { type: 'number' },
-            emotions: {
-              type: 'object',
-              additionalProperties: { type: 'number' },
-            },
+            emotions: { type: 'object', additionalProperties: true },
           },
+        },
+        render: (_args, value) => {
+          const emo = value?.emotions ?? {};
+          const lines = Object.entries(emo)
+            .sort((a, b) => Number(b[1]) - Number(a[1]))
+            .map(([k, n]) => `  ${k}: ${n}`)
+            .join('\n');
+          return [{
+            type: 'text',
+            text: `表情库共 ${value?.total ?? 0} 张\n${lines}`,
+          }];
         },
       },
       execute: async () => {
@@ -224,11 +246,21 @@ export function apply(ctx, rawConfig) {
                 properties: {
                   name: { type: 'string' },
                   package: { type: 'string' },
+                  path: { type: 'string' },
                   url: { type: 'string' },
                 },
               },
             },
           },
+        },
+        render: (_args, value) => {
+          const items = value?.items ?? [];
+          if (!items.length) return [{ type: 'text', text: '表情库里没有可用的图。' }];
+          const lines = items.map((it, i) => `${i + 1}. ${it.name || '(无名字)'} — ${it.path || it.url}`).join('\n');
+          return [{
+            type: 'text',
+            text: `挑了 ${items.length} 张（${value?.emotion ?? 'random'}）：\n${lines}\n\n把某个 path 当 stickerId 传给 qq_send_sticker 就发出去了。`,
+          }];
         },
       },
       execute: async ({ emotion, count }) => ({
@@ -236,6 +268,11 @@ export function apply(ctx, rawConfig) {
         items: pick(emotion, count),
       }),
     }), 'companion-sticker: pick');
+
+    log('工具已注册：sticker_stats / sticker_pick');
+    } catch (err) {
+      warn(`注册工具抛错：${err?.message ?? err}`);
+    }
   });
 
   ctx.effect(() => () => {

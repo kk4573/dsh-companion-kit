@@ -261,6 +261,10 @@ export function apply(ctx, rawConfig) {
           additionalProperties: false,
           properties: { ok: { type: 'boolean' }, text: { type: 'string' } },
         },
+        render: (_args, value) => [{
+          type: 'text',
+          text: value?.ok ? `记下了：${value.text}` : `没记成：${value?.text ?? ''}`,
+        }],
       },
       execute: async ({ text, kind }) => {
         try {
@@ -301,6 +305,14 @@ export function apply(ctx, rawConfig) {
               },
             },
           },
+        },
+        render: (_args, value) => {
+          const items = value?.items ?? [];
+          if (!items.length) return [{ type: 'text', text: '没找到相关的往事。' }];
+          return [{
+            type: 'text',
+            text: items.map((it, i) => `${i + 1}. [${it.kind || 'normal'}] ${it.text}`).join('\n'),
+          }];
         },
       },
       execute: async ({ query, limit }) => {

@@ -18,11 +18,11 @@
 `shy`（害羞）、`tired`（困）、`surprise`（惊讶）、`ok`（敷衍）、`love`（喜欢）、`misc`（其他）。
 也可以直接写中文：开心、无语、生气、委屈、害羞、困、惊讶、敷衍、喜欢。
 
-`sticker_pick` 返回一个 `url`，把它当 `stickerId` 传给 `qq_send_sticker` 就发出去了：
+`sticker_pick` 返回每张图的本地路径 `path`，把它当 `stickerId` 传给 `qq_send_sticker` 就发出去了：
 
 ```
-sticker_pick(emotion="awkward")        → { items: [{ name, url }, ...] }
-qq_send_sticker(key, token, stickerId=<那个 url>)
+sticker_pick(emotion="awkward")        → { items: [{ name, path }, ...] }
+qq_send_sticker(key, token, stickerId=<那个 path>)
 ```
 
 ### 自己攒的（QQ 收藏）

@@ -195,6 +195,15 @@ export function apply(ctx, rawConfig) {
             },
           },
         },
+        render: (_args, value) => {
+          const items = value?.items ?? [];
+          if (!items.length) return [{ type: 'text', text: '人设目录是空的。' }];
+          const lines = items.map((it) => {
+            const mark = it.name === value?.current ? ' ← 当前' : '';
+            return `- ${it.name}${mark}${it.preview ? `：${it.preview}` : ''}`;
+          });
+          return [{ type: 'text', text: `可用人设：\n${lines.join('\n')}` }];
+        },
       },
       execute: async () => {
         const all = listPersonas();
@@ -221,6 +230,10 @@ export function apply(ctx, rawConfig) {
           additionalProperties: false,
           properties: { ok: { type: 'boolean' }, current: { type: 'string' }, message: { type: 'string' } },
         },
+        render: (_args, value) => [{
+          type: 'text',
+          text: String(value?.message || (value?.ok ? `已切换到「${value?.current ?? ''}」` : '切换失败')),
+        }],
       },
       execute: async ({ name: want }) => {
         const target = String(want ?? '').trim();
