@@ -32,6 +32,15 @@ import {
   readDiaryState,
   writeDiaryState,
 } from '../core/diary.mjs';
+import {
+  MOOD_MAX_TOKENS,
+  MOOD_PROMPT,
+  buildDialog,
+  gapDelta,
+  parseMoodVerdict,
+  readMood,
+  writeMood,
+} from '../core/mood.mjs';
 
 const SECTION_NAME = 'companion:memory';
 /** 人物设定在前（0），记忆在后（100） */
@@ -64,6 +73,9 @@ function resolveConfig(raw) {
     recentlyMentionedPenalty: Number.isFinite(Number(c.recentlyMentionedPenalty))
       ? Number(c.recentlyMentionedPenalty) : 0.5,
     defaultSalience: Number(c.defaultSalience) > 0 ? Number(c.defaultSalience) : 0.5,
+    // 心情/好感度：留空 = 不启用（桥那边会用自己的默认值）
+    moodFile: String(c.moodFile ?? '').trim(),
+    moodIntervalMs: Number(c.moodIntervalMs) > 0 ? Number(c.moodIntervalMs) : 600000,
   };
 }
 
@@ -346,9 +358,9 @@ export function apply(ctx, rawConfig) {
             if (!text) return sendJson(res, 400, { ok: false, error: 'empty' });
             if (!config.enabled) return sendJson(res, 200, { ok: true, kept: false, reason: 'disabled' });
             try {
-              // 先进对话缓冲（不管值不值得记，日记要的是整段对话）
+              // 先进对话缓冲（不管值不值得记，日记和心情要的是整段对话）
               const buf = segmentBuffer.get('default') ?? { messages: [], lastAt: 0 };
-              buf.messages.push(text);
+              buf.messages.push({ text, at: Date.now() });
               buf.lastAt = Date.now();
               if (buf.messages.length > 80) buf.messages.shift();
               segmentBuffer.set('default', buf);
@@ -375,6 +387,16 @@ export function apply(ctx, rawConfig) {
             await maybeWriteDiary(true);
             const { diary } = refreshCache();
             return sendJson(res, 200, { ok: true, days: diary.map((d) => d.date) });
+          },
+        },
+        {
+          kind: 'exact',
+          path: '/companion-memory/mood',
+          handler: async (req, res) => {
+            if (req.method !== 'POST') return sendJson(res, 405, { ok: false, error: 'method' });
+            await scoreMood();
+            const file = config.moodFile;
+            return sendJson(res, 200, { ok: true, mood: file ? readMood(file) : null });
           },
         },
         {
@@ -527,7 +549,7 @@ export function apply(ctx, rawConfig) {
     const count = buf.messages.length;
     try {
       const prompt = buildDiaryPrompt({
-        lines: buf.messages.slice(-40).map((m) => `他：${String(m).slice(0, 200)}`),
+        lines: buf.messages.slice(-40).map((m) => `他：${String(m?.text ?? m).slice(0, 200)}`),
         moodDesc: '',
         slot: '',
       });
@@ -577,6 +599,88 @@ export function apply(ctx, rawConfig) {
   ctx.effect(() => () => {
     clearInterval(diaryTimer);
   }, 'companion-memory: diary timer');
+
+  // ── 心情/好感度：每 10 分钟检查，只评新消息（没新消息不调模型）─────
+  let moodBusy = false;
+
+  async function scoreMood() {
+    if (moodBusy || !config.enabled || !config.moodFile) return;
+    const buf = segmentBuffer.get('default');
+    const mood = readMood(config.moodFile);
+    const now = Date.now();
+
+    // 空窗推进：他好几天没来，心情按天走，不是冻结
+    if (!buf || !buf.messages.length) {
+      const gapDays = mood.lastScoredMsgTime ? (now - mood.lastScoredMsgTime) / 86400000 : 0;
+      if (gapDays >= 3) {
+        const g = gapDelta(gapDays, mood.mood);
+        if (g.delta) {
+          mood.affection = Math.max(0, Math.min(100, mood.affection + g.delta));
+          mood.mood = g.mood;
+          mood.note = g.note;
+          mood.lastScoredAt = now;
+          writeMood(config.moodFile, mood);
+          log(`空窗 ${Math.floor(gapDays)} 天：好感 ${mood.affection} | ${mood.mood}`);
+        }
+      }
+      return;
+    }
+
+    const fresh = buf.messages.filter((m) => Number(m?.at) > mood.lastScoredMsgTime);
+    if (!fresh.length) return;
+
+    moodBusy = true;
+    try {
+      const sel = currentModel();
+      if (!sel) return;
+      const texts = buf.messages.map((m) => String(m?.text ?? m));
+      const dialog = buildDialog(texts, texts.length - fresh.length);
+      const abort = new AbortController();
+      const timer = setTimeout(() => abort.abort(), 45000);
+      let raw = '';
+      try {
+        for await (const chunk of ctx.llm.stream({
+          provider: sel.provider,
+          model: sel.model,
+          messages: [{ role: 'user', content: [{ type: 'text', text: MOOD_PROMPT.replace('{dialog}', dialog) }] }],
+          maxTokens: MOOD_MAX_TOKENS,
+          temperature: 0,
+          reasoningEffort: 'off',
+          signal: abort.signal,
+        })) {
+          if (chunk?.type === 'text-delta' && typeof chunk.text === 'string') raw += chunk.text;
+        }
+      } finally {
+        clearTimeout(timer);
+      }
+
+      const v = parseMoodVerdict(raw);
+      if (!v) {
+        warn('心情打分解析失败：', raw.slice(0, 80));
+        return;
+      }
+      mood.affection = Math.max(0, Math.min(100, mood.affection + v.delta));
+      mood.mood = v.mood;
+      mood.note = v.note;
+      mood.lastScoredAt = Date.now();
+      mood.lastScoredMsgTime = Number(fresh[fresh.length - 1]?.at) || Date.now();
+      writeMood(config.moodFile, mood);
+      log(`好感 ${mood.affection} (${v.delta >= 0 ? '+' : ''}${v.delta}) | 心情: ${mood.mood} | ${v.note}`);
+    } catch (err) {
+      warn('心情打分失败：', err?.message ?? err);
+    } finally {
+      moodBusy = false;
+    }
+  }
+
+  const moodTimer = setInterval(() => {
+    void scoreMood();
+  }, config.moodIntervalMs);
+  moodTimer.unref?.();
+
+  ctx.effect(() => () => {
+    clearInterval(moodTimer);
+  }, 'companion-memory: mood timer');
 
   ctx.effect(() => () => {
     states.clear();
